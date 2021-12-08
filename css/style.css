@@ -325,6 +325,9 @@ header {
 }
 
 @media screen and (max-width: 767px) {
+  .header__wrapper {
+    max-width: 700px;
+  }
   .header__navigation {
     position: fixed;
     padding-left: 10px;
@@ -816,6 +819,9 @@ header {
     top: -30px;
     width: 100px;
     height: 100px;
+  }
+  .welcome__links {
+    max-width: 360px;
   }
   .welcome__links .links__item a {
     font-size: 14px;
