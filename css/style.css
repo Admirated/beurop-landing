@@ -822,6 +822,8 @@ header {
   }
   .welcome__links {
     max-width: 360px;
+    width: 90%;
+    padding-left: 0;
   }
   .welcome__links .links__item a {
     font-size: 14px;
