@@ -404,6 +404,10 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -415,6 +419,7 @@ header {
 }
 
 .page__welcome {
+  margin-bottom: 100px;
   position: relative;
   width: 100vw;
   padding-top: 84px;
@@ -934,5 +939,104 @@ header {
   .info-title {
     font-size: 14px;
     line-height: 18.62px;
+  }
+}
+
+.about__wrapper {
+  max-width: 1222px;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.about__wrapper:not(:last-child) {
+  margin-bottom: 180px;
+}
+
+.about__title {
+  font-size: 58px;
+  color: #fff;
+  font-family: "Syncopate", sans-serif;
+  line-height: 66.63px;
+  margin-bottom: 45px;
+}
+
+.about__title span {
+  font-size: 20px;
+  line-height: 31.92px;
+  position: absolute;
+  top: -25px;
+  right: 0px;
+  color: var(--yellow);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.about__text p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  line-height: 23.94px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.about__text p:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.about__text span {
+  color: var(--yellow);
+}
+
+.about__image img {
+  width: 100%;
+}
+
+.about .img__wrapper {
+  width: 1021px;
+}
+
+.about .img__wrapper img {
+  position: absolute;
+  left: -355px;
+  top: -334px;
+}
+
+@media screen and (max-width: 767px) {
+  .about__wrapper {
+    max-width: 420px;
+    width: 100%;
+    padding: 0 12px;
+    margin: 0 auto;
+  }
+  .about__wrapper:not(:last-child) {
+    margin-bottom: 80px;
+  }
+  .about__title {
+    font-size: 18px;
+    line-height: 18.74px;
+    margin-bottom: 22px;
+  }
+  .about__title span {
+    font-size: 8px;
+    line-height: 11.92px;
+    position: absolute;
+    top: -15px;
+    right: 0px;
+    color: var(--yellow);
+  }
+  .about__text {
+    margin-bottom: 20px;
+  }
+  .about__text p {
+    font-size: 14px;
+    line-height: 18.62px;
+  }
+  .about__text p:not(:last-child) {
+    margin-bottom: 13px;
+  }
+  .about .img__wrapper {
+    width: 100%;
+  }
+  .about .img__wrapper img {
+    position: static;
   }
 }
