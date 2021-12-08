@@ -961,8 +961,20 @@ header {
   width: 100%;
 }
 
-.about__wrapper:last-child {
+.about__wrapper:not(:first-child) {
   padding-top: 180px;
+}
+
+.about__wrapper:not(:first-child) .about__title p {
+  margin-left: -4px;
+}
+
+.about__wrapper:last-child .about__title span {
+  font-size: 20px;
+  line-height: 31.92px;
+  position: absolute;
+  left: 0px;
+  color: var(--yellow);
 }
 
 .about__title {
@@ -977,7 +989,7 @@ header {
   font-size: 20px;
   line-height: 31.92px;
   position: absolute;
-  top: -25px;
+  top: -45px;
   right: 0px;
   color: var(--yellow);
   font-family: "Segoe UI", sans-serif;
@@ -1020,12 +1032,22 @@ header {
     padding: 0 12px;
     margin: 0 auto;
   }
-  .about__wrapper:last-child {
+  .about__wrapper:not(:first-child) {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     padding-top: 80px;
+  }
+  .about__wrapper:not(:first-child) .about__title p {
+    margin-left: -0px;
+  }
+  .about__wrapper:last-child .about__title span {
+    font-size: 8px;
+    line-height: 11.92px;
+    position: absolute;
+    top: -15px;
+    color: var(--yellow);
   }
   .about__title {
     font-size: 18px;
