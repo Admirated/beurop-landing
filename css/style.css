@@ -65,6 +65,8 @@ select {
   --main-color: #040037;
   --yellow: #d3f700;
   --green: #00e23f;
+  --pink: #b8aadc;
+  --purple: #6c35d4;
 }
 
 body {
@@ -128,7 +130,7 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  height: 94px;
+  height: 59px;
   position: fixed;
   z-index: 1000;
   top: 0;
@@ -147,7 +149,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 45px 10px 0px 10px;
+  padding: 10px 10px 0px 10px;
   position: absolute;
   top: 0;
   left: 0;
@@ -1077,5 +1079,259 @@ header {
   }
   .about .img__wrapper img {
     position: static;
+  }
+}
+
+.page__slider {
+  padding-top: 100px;
+}
+
+.swiper-slide-active .slider__card {
+  margin-top: -33px;
+  height: 650px;
+}
+
+.swiper-slide-prev .slider__card {
+  margin-top: 0;
+  height: 589px;
+}
+
+.card__slider {
+  max-width: 1150px;
+  padding-top: 50px;
+  height: 750px;
+  min-width: 0px;
+}
+
+.card__slider .swiper-pagination {
+  bottom: 0;
+}
+
+.card__slider .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  line-height: 20;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+.card__slider .swiper-scrollbar-drag {
+  cursor: pointer;
+  background-color: var(--purple);
+}
+
+.slider__card {
+  position: relative;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  width: 416px;
+  height: 589px;
+  padding: 30px 25px;
+  border: 1px solid;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.slider__card.yellow {
+  border-color: var(--yellow);
+}
+
+.slider__card.yellow .card__title {
+  color: var(--yellow);
+}
+
+.slider__card.pink {
+  border-color: var(--pink);
+}
+
+.slider__card.pink .card__title {
+  color: var(--pink);
+}
+
+.slider__card.purple {
+  border-color: var(--purple);
+}
+
+.slider__card.purple .card__title {
+  color: var(--purple);
+}
+
+.card__title {
+  margin-bottom: 16px;
+}
+
+.card__title p {
+  text-align: center;
+  font-size: 24px;
+  line-height: 31.92px;
+  font-weight: 600;
+  font-family: "Segoe UI", sans-serif;
+  letter-spacing: 0em;
+}
+
+.card__subtitle {
+  height: 85px;
+}
+
+.card__subtitle p {
+  color: #fff;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.card__text p {
+  color: #fff;
+  font-family: "SatoshiLight", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.card__footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 0 45px 25px 0;
+  height: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.card__line {
+  width: 94px;
+  height: 1px;
+  background-color: #fff;
+  margin-right: 10px;
+  margin-bottom: 9px;
+}
+
+.card__link p a {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .page__slider {
+    padding-top: 10px;
+  }
+  .page__slider .swiper-slide-active .slider__card {
+    margin-top: -33px;
+    height: 378px;
+  }
+  .page__slider .swiper-slide-prev .slider__card {
+    margin-top: 0;
+    height: 328px;
+  }
+  .card__slider {
+    max-width: 360px;
+    height: 420px;
+    min-width: 0px;
+  }
+  .card__slider .swiper-pagination {
+    bottom: 0;
+  }
+  .card__slider .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    line-height: 20;
+    font-size: 14px;
+    background-color: #fff;
+  }
+  .card__slider .swiper-scrollbar-drag {
+    cursor: pointer;
+    background-color: var(--purple);
+  }
+  .slider__card {
+    position: relative;
+    width: 208px;
+    height: 328px;
+    padding: 25px 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .slider__card.yellow {
+    border-color: var(--yellow);
+  }
+  .slider__card.yellow .card__title {
+    color: var(--yellow);
+  }
+  .slider__card.pink {
+    border-color: var(--pink);
+  }
+  .slider__card.pink .card__title {
+    color: var(--pink);
+  }
+  .slider__card.purple {
+    border-color: var(--purple);
+  }
+  .slider__card.purple .card__title {
+    color: var(--purple);
+  }
+  .card__title {
+    margin-bottom: 16px;
+  }
+  .card__title p {
+    font-size: 14px;
+    line-height: 18.62px;
+  }
+  .card__subtitle {
+    display: none;
+  }
+  .card__text p {
+    font-size: 10px;
+    line-height: 13.3px;
+  }
+  .card__footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 0 45px 25px 0;
+    height: 130px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .card__line {
+    width: 34px;
+    height: 1px;
+    background-color: #fff;
+    margin-right: 10px;
+    margin-bottom: 12px;
+  }
+  .card__link p a {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18.62px;
+    letter-spacing: 0em;
+    color: #fff;
   }
 }
