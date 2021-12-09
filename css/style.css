@@ -409,7 +409,13 @@ header {
     height: 35px;
   }
   header {
-    max-width: 420px;
+    max-width: 440px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  header {
+    max-width: 400px;
   }
 }
 
