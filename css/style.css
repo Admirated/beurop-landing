@@ -338,7 +338,7 @@ header {
 @media screen and (max-width: 767px) {
   .header__wrapper {
     max-width: none;
-    width: 100%;
+    width: 95%;
   }
   .header__navigation {
     position: fixed;
