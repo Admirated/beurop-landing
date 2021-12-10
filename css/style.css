@@ -1372,13 +1372,11 @@ header {
 }
 
 .chart__bar .bar-part {
-  mix-blend-mode: overlay;
   position: relative;
   height: 17px;
 }
 
 .chart__bar .bar-part div {
-  mix-blend-mode: overlay;
   position: absolute;
   z-index: -1;
   top: 0;
@@ -1392,7 +1390,7 @@ header {
           box-shadow: inset 11px 13px 13px rgba(255, 255, 255, 0.05), inset -1px 1px 12px rgba(255, 255, 255, 0.25);
   -webkit-backdrop-filter: blur(80px);
           backdrop-filter: blur(80px);
-  mix-blend-mode: overlay;
+  mix-blend-mode: normal;
   width: 1587px;
   height: 18px;
   position: absolute;
