@@ -698,10 +698,10 @@ header {
 .join__circle .circle::before {
   content: "";
   position: absolute;
-  top: -1.5px;
-  right: -1.5px;
-  bottom: -1.5px;
-  left: -1.5px;
+  top: -2.5px;
+  right: -2.5px;
+  bottom: -2.5px;
+  left: -2.5px;
   z-index: -1;
   border-radius: 50%;
   background: -webkit-gradient(linear, right top, left bottom, from(rgba(218, 255, 0, 0.49)), color-stop(44.79%, #edffa6), color-stop(73.96%, #bfb1e3), to(#5438ff));
@@ -1358,6 +1358,21 @@ header {
   padding-top: 100px;
 }
 
+.allocation__title {
+  margin-bottom: 70px;
+}
+
+.allocation__title p {
+  font-family: "Syncopate", sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 67px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+}
+
 .allocation__chart {
   position: relative;
 }
@@ -1367,7 +1382,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1587px;
+  max-width: 1587px;
   height: 17px;
 }
 
@@ -1376,11 +1391,58 @@ header {
   height: 17px;
 }
 
-.chart__bar .bar-part div {
+.chart__bar .bar-part div.bar {
   position: absolute;
   z-index: -1;
   top: 0;
   height: 17px;
+}
+
+.chart__bar .bar-part .bar-text__wrapper {
+  position: absolute;
+  width: 82px;
+  height: 145px;
+  top: -28px;
+  left: 100%;
+}
+
+.chart__bar .bar-part .bar-text__wrapper .text:last-child {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-left: -85%;
+  margin-top: 15px;
+  color: #fff;
+}
+
+.chart__bar .bar-part:last-child .bar-text__wrapper {
+  left: 33%;
+}
+
+.chart__bar .bar-part .line {
+  width: 1px;
+  height: 77px;
+  background-color: #fff;
+}
+
+.chart__bar .bar-part .bar-percent {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-top: 15px;
+  color: #fff;
+}
+
+.chart__bar .bar-part .bar-percent.yellow {
+  color: var(--yellow);
 }
 
 .chart__overlay {
@@ -1391,7 +1453,7 @@ header {
   -webkit-backdrop-filter: blur(80px);
           backdrop-filter: blur(80px);
   mix-blend-mode: normal;
-  width: 1587px;
+  max-width: 1587px;
   height: 18px;
   position: absolute;
   top: 0;
