@@ -13,9 +13,9 @@ new Swiper('.card__slider', {
    // },
    slidesPerView: 1.5,
    autoplay: {
-      delay: 1000
+      delay: 2500
    },
-   speed: 800,
+   speed: 600,
    initialSlide: 1,
    centeredSlides: true,
    breakpoints: {
