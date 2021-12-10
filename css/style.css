@@ -1358,6 +1358,10 @@ header {
   padding-top: 100px;
 }
 
+.allocation__chart {
+  position: relative;
+}
+
 .chart__bar {
   position: relative;
   display: -webkit-box;
@@ -1365,15 +1369,6 @@ header {
   display: flex;
   width: 1587px;
   height: 17px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(64, 22, 145, 0.03)), color-stop(0.01%, rgba(211, 247, 0, 0.0147)), color-stop(30.73%, rgba(64, 22, 145, 0.03)), color-stop(49.48%, rgba(211, 247, 0, 0.0147)), to(rgba(0, 0, 0, 0.03)));
-  background: linear-gradient(180deg, rgba(64, 22, 145, 0.03) 0%, rgba(211, 247, 0, 0.0147) 0.01%, rgba(64, 22, 145, 0.03) 30.73%, rgba(211, 247, 0, 0.0147) 49.48%, rgba(0, 0, 0, 0.03) 100%);
-  -webkit-box-shadow: inset 11px 13px 13px rgba(255, 255, 255, 0.05), inset -1px 1px 12px rgba(255, 255, 255, 0.25);
-          box-shadow: inset 11px 13px 13px rgba(255, 255, 255, 0.05), inset -1px 1px 12px rgba(255, 255, 255, 0.25);
-  -webkit-backdrop-filter: blur(80px);
-          backdrop-filter: blur(80px);
-  mix-blend-mode: overlay;
-  /* Note: backdrop-filter has minimal browser support */
-  border-radius: 20px;
 }
 
 .chart__bar .bar-part {
@@ -1383,9 +1378,25 @@ header {
 }
 
 .chart__bar .bar-part div {
+  mix-blend-mode: overlay;
   position: absolute;
   z-index: -1;
   top: 0;
   height: 17px;
+}
+
+.chart__overlay {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(64, 22, 145, 0.03)), color-stop(0.01%, rgba(211, 247, 0, 0.0147)), color-stop(30.73%, rgba(64, 22, 145, 0.03)), color-stop(49.48%, rgba(211, 247, 0, 0.0147)), to(rgba(0, 0, 0, 0.03)));
+  background: linear-gradient(180deg, rgba(64, 22, 145, 0.03) 0%, rgba(211, 247, 0, 0.0147) 0.01%, rgba(64, 22, 145, 0.03) 30.73%, rgba(211, 247, 0, 0.0147) 49.48%, rgba(0, 0, 0, 0.03) 100%);
+  -webkit-box-shadow: inset 11px 13px 13px rgba(255, 255, 255, 0.05), inset -1px 1px 12px rgba(255, 255, 255, 0.25);
+          box-shadow: inset 11px 13px 13px rgba(255, 255, 255, 0.05), inset -1px 1px 12px rgba(255, 255, 255, 0.25);
+  -webkit-backdrop-filter: blur(80px);
+          backdrop-filter: blur(80px);
   mix-blend-mode: overlay;
+  width: 1587px;
+  height: 18px;
+  position: absolute;
+  top: 0;
+  border-radius: 20px;
+  left: 0;
 }
