@@ -37,10 +37,10 @@
                   <ul class="d-flex justify-content-between">
                      <li class="navigation-item"><a href="#about" class="navigation-link">About</a></li>
                      <li class="navigation-item"><a href="#platform" class="navigation-link">Platform</a></li>
-                     <li class="navigation-item"><a href="" class="navigation-link">Products</a></li>
-                     <li class="navigation-item"><a href="" class="navigation-link">Token allocation</a></li>
-                     <li class="navigation-item"><a href="" class="navigation-link">Roadmap</a></li>
-                     <li class="navigation-item"><a href="" class="navigation-link">Team</a></li>
+                     <li class="navigation-item"><a href="#slider" class="navigation-link">Products</a></li>
+                     <li class="navigation-item"><a href="#allocation" class="navigation-link">Token allocation</a></li>
+                     <li class="navigation-item"><a href="#roadmap" class="navigation-link">Roadmap</a></li>
+                     <li class="navigation-item"><a href="#team" class="navigation-link">Team</a></li>
                   </ul>
                   <div class="menu__footer hide">
                      <div class="menu__social mb-4">
@@ -91,9 +91,11 @@
    <main id="page">
       <div class="page__container">
          <section class="page__welcome welcome">
-            <div class="geometry top">
-               <div class="circle top"></div>
-               <div class="rectangle top"></div>
+            <div class="geometry-wrapper">
+               <div class="geometry top">
+                  <div class="circle top"></div>
+                  <div class="rectangle top"></div>
+               </div>
             </div>
             <div class="welcome__wrapper">
                <div class="welcome__title text-center mb-3">
@@ -222,10 +224,13 @@
                   </div>
                </div>
             </div>
-            <div class="geometry bottom">
-               <div class="circle bottom"></div>
-               <div class="rectangle bottom"></div>
+            <div class="geometry-wrapper">
+               <div class="geometry bottom">
+                  <div class="circle bottom"></div>
+                  <div class="rectangle bottom"></div>
+               </div>
             </div>
+
          </section>
          <a name="about"></a>
          <section class="page__about about">
@@ -302,6 +307,7 @@
                </div>
             </div>
          </section>
+         <a name="slider"></a>
          <section class="page__slider slider">
             <div class="card__slider swiper-container swiper">
                <div class="swiper-wrapper">
@@ -401,6 +407,7 @@
                <div class="swiper-scrollbar"></div>
             </div>
          </section>
+         <a name="allocation"></a>
          <section class="page__allocation allocation">
             <div class="allocation__container">
                <div class="allocation__title">
@@ -487,9 +494,320 @@
                   </div>
                   <div class="chart__overlay"></div>
                </div>
+               <div class="allocation__circe">
+                  <div class="circle__wrapper row align-items-center">
+                     <div class="col-12 col-xl-6 circle__chart">
+                        <div class="circle__chart-ball">
+                           <img src="./assets/img/beurop-ball.png" alt="beurop">
+
+                           <div class="ellipse">
+                              <img src="./assets/img/circle.png" alt="">
+                              <div class="ellipse-lines">
+                                 <div class="line1 line">
+                                    <div class="chart-text1 chart-text">
+                                       <p>LP Holders</p>
+                                       <p class="chart-percent">-3%</p>
+                                    </div>
+                                 </div>
+                                 <div class="line2 line">
+                                    <div class="chart-text2 chart-text">
+                                       <p>BEPR Holders</p>
+                                       <p class="chart-percent">-3%</p>
+                                    </div>
+                                 </div>
+                                 <div class="line3 line">
+                                    <div class="chart-text3 chart-text">
+                                       <p>Marketing</p>
+                                       <p><span class="chart-percent">-4%</span>(including 1% Charity)</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+                        </div>
+                     </div>
+                     <div class="col-12 col-xl-6 circle__text">
+                        <div class="allocation__cards-wrapper">
+                           <div class="d-flex">
+                              <div class="allocation__card">
+                                 <div class="card-title">
+                                    <p class="yellow">PRESALE & PRIVATE</p>
+                                 </div>
+                                 <div class="card-subtitle">
+                                    <p>September, 30</p>
+                                 </div>
+                                 <div class="card-description"></div>
+                                 <div class="card-allocation">
+                                    <p>11.000.000 <span class="yellow">BEPR</span></p>
+                                 </div>
+                              </div>
+                              <div class="allocation__card">
+                                 <div class="card-title">
+                                    <p class="yellow">TEAM&CEX&DEX</p>
+                                 </div>
+                                 <div class="card-subtitle">
+                                    <p>October, 1</p>
+                                    <div class="card-description">
+                                       <p>(1 year locking period)</p>
+                                    </div>
+                                 </div>
+                                 <div class="card-allocation">
+                                    <p style="margin-bottom: 8px;">10.000.000 <span class="yellow">BEPR</span><wbr><a
+                                          href="#">View Locker</a></p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="d-flex">
+                              <div class="allocation__card pink">
+                                 <div class="card-title">
+                                    <p class="pink">DEVELOPING</p>
+                                 </div>
+                                 <div class="card-subtitle">
+                                    <p>October, 1</p>
+                                    <div class="card-description">
+                                       <p>(1 year locking period)</p>
+                                    </div>
+                                 </div>
+                                 <div class="card-allocation">
+                                    <p>3.000.000 <span class="pink">BEPR</span></p>
+                                 </div>
+                              </div>
+                              <div class="allocation__card pink">
+                                 <div class="card-title">
+                                    <p class="pink">PANCAKESWAP</p>
+                                 </div>
+                                 <div class="card-subtitle">
+                                    <p>October, 1</p>
+                                    <div class="card-description">
+                                       <p>(3 year locking period)</p>
+                                    </div>
+                                 </div>
+                                 <div class="card-allocation">
+                                    <p>6.000.000 <span class="pink">BEPR</span></p>
+                                 </div>
+                              </div>
+                           </div>
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
          </section>
-      </div>
+         <a name="roadmap"></a>
+         <div class="page__roadmap roadmap">
+            <div class="roadmap__container">
+               <div class="roadmap__text-wrapper col-5">
+                  <div class="roadmap__title">
+                     <span>TIME LINE</span>
+                     <p>Road map</p>
+                  </div>
+                  <div class="roadmap__text">
+                     <p>We have developed a roadmap that reflects the main<wbr>
+                        milestones of the company’s growth and development.</p>
+                  </div>
+               </div>
+               <div class="roadmap__blocks-wrapper">
+                  <div class="roadmap__block top">
+                     <div class="roadmap__points-wrapper top">
+                        <div class="roadmap__block-point point">
+                           <div class="point__circle"></div>
+                           <div class="point__title-wrapper">
+                              <div class="point__title">
+                                 <p class="achieved">Concept</p>
+                              </div>
+                              <div class="point__subtitle">
+                                 <p>Concept Generation<wbr>
+                                    Team Assemble</p>
+                              </div>
+                           </div>
+                           <div class="point__data">
+                              <p class="achieved">2021 Q1</p>
+                           </div>
+                        </div>
+                        <div class="roadmap__block-point point" style="max-width: 301px">
+                           <div class="point__circle"></div>
+                           <div class="point__title-wrapper">
+                              <div class="point__title">
+                                 <p class="achieved">Research</p>
+                              </div>
+                              <div class="point__subtitle">
+                                 <p>Proving the concept can work<wbr>
+                                    Strategic Plan<wbr>
+                                    White paper</p>
+                              </div>
+                           </div>
+                           <div class="point__data">
+                              <p class="achieved">2021 Q2</p>
+                           </div>
+                        </div>
+                        <div class="roadmap__block-point point" style="max-width: 297px">
+                           <div class="point__circle"></div>
+                           <div class="point__title-wrapper">
+                              <div class="point__title">
+                                 <p class="achieved">Design</p>
+                              </div>
+                              <div class="point__subtitle">
+                                 <p>Pre-sale platform design and<wbr>
+                                    technical demonstration<wbr>
+                                    Building the MVP</p>
+                              </div>
+                           </div>
+                           <div class="point__data">
+                              <p class="achieved">2021 Q2</p>
+                           </div>
+                        </div>
+                        <div class="roadmap__block-point point" style="max-width: 223px">
+                           <div class="point__circle"></div>
+                           <div class="point__title-wrapper">
+                              <div class="point__title">
+                                 <p class="achieved">Pre-Sale</p>
+                              </div>
+                              <div class="point__subtitle">
+                                 <p>Pre-sale<wbr>
+                                    Pancakeswap Liquidity</p>
+                              </div>
+                           </div>
+                           <div class="point__data">
+                              <p class="achieved">2021 Q3</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="roadmap__points-wrapper bottom">
+                        <div class="roadmap__block-point point" style="max-width: 186px">
+                           <div class="point__circle"></div>
+                           <div class="point__title-wrapper">
+                              <div class="point__title">
+                                 <p>NFT Marketplace</p>
+                              </div>
+                              <div class="point__subtitle">
+                                 <p>
+                                    Investigation<wbr>
+                                    Development<wbr>
+                                    Testing<wbr>
+                                    Launch<wbr>
+                                    CEX Listing</p>
+                              </div>
+                           </div>
+                           <div class="point__data">
+                              <p>2023 Q1-Q2</p>
+                           </div>
+                        </div>
+                        <div class="roadmap__block-point point" style="max-width: 144px">
+                           <div class="point__circle"></div>
+                           <div class="point__title-wrapper">
+                              <div class="point__title">
+                                 <p>Launchpad</p>
+                              </div>
+                              <div class="point__subtitle">
+                                 <p>Investigation<wbr>
+                                    Development<wbr>
+                                    Testing<wbr>
+                                    Launch<wbr>
+                                    CEX Listing</p>
+                              </div>
+                           </div>
+                           <div class="point__data">
+                              <p>2022 Q3-Q4</p>
+                           </div>
+                        </div>
+                        <div class="roadmap__block-point point" style="max-width: 167px">
+                           <div class="point__circle"></div>
+                           <div class="point__title-wrapper">
+                              <div class="point__title">
+                                 <p>P2E NFT GAME</p>
+                              </div>
+                              <div class="point__subtitle">
+                                 <p>
+                                    Investigation<wbr>
+                                    Development<wbr>
+                                    Token presale<wbr>
+                                    Game launch<wbr>
+                                    CEX Listing</p>
+                              </div>
+                           </div>
+                           <div class="point__data">
+                              <p>2022 Q1-Q2</p>
+                           </div>
+                        </div>
+                        <div class="roadmap__block-point point" style="max-width: 213px">
+                           <div class="point__circle"></div>
+                           <div class="point__title-wrapper">
+                              <div class="point__title">
+                                 <p class="achieved">Marketing Platform</p>
+                              </div>
+                              <div class="point__subtitle">
+                                 <p>Investigation<wbr>
+                                    Development<wbr>
+                                    Launch<wbr>
+                                    Promotion</p>
+                              </div>
+                           </div>
+                           <div class="point__data">
+                              <p class="achieved">2021 Q3-Q4</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="roadmap__block bottom">
+                     <div class="roadmap__points-wrapper bottom">
+                        <div class="roadmap__block-point point" style="max-width: 144px">
+                           <div class="point__circle"></div>
+                           <div class="point__title-wrapper">
+                              <div class="point__title">
+                                 <p>CEX</p>
+                              </div>
+                              <div class="point__subtitle">
+                                 <p>
+                                    License<wbr>
+                                    Development<wbr>
+                                    Testing <wbr>
+                                    Launch
+                              </div>
+                              </div>
+                              <div class="point__data">
+                                 <p>2023 Q3-Q4</p>
+                              </div>
+                           </div>
+                           <div class="roadmap__block-point point" style="max-width: 141px">
+                              <div class="point__circle"></div>
+                              <div class="point__title-wrapper">
+                                 <div class="point__title">
+                                    <p>Listing</p>
+                                 </div>
+                                 <div class="point__subtitle">
+                                    <p>Main CEXs<wbr>
+                                    Binance listing</p>
+                                 </div>
+                              </div>
+                              <div class="point__data">
+                                 <p>2024 Q1</p>
+                              </div>
+                           </div>
+                           <div class="roadmap__block-point point" style="max-width: 135px">
+                              <div class="point__circle"></div>
+                              <div class="point__title-wrapper">
+                                 <div class="point__title">
+                                    <p>Stable Coin</p>
+                                 </div>
+                                 <div class="point__subtitle">
+                                    <p>
+                                       Investigation<wbr>
+                                    Partnership<wbr>
+                                    Institutionals<wbr>
+                                    Launch
+                              </div>
+                                 </div>
+                                 <div class="point__data">
+                                    <p>2024 Q2-Q4</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  </section>
+               </div>
    </main>
 
    <script type="module" src="./app.js"></script>

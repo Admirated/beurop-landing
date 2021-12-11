@@ -445,6 +445,13 @@ header {
   padding-bottom: 100px;
 }
 
+.page__container .geometry-wrapper {
+  max-width: 1222px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
 .page__welcome {
   position: relative;
   width: 100vw;
@@ -497,13 +504,13 @@ header {
 }
 
 .page__welcome .geometry.top {
-  top: 20px;
+  top: -60px;
   right: -40px;
 }
 
 .page__welcome .geometry.bottom {
   bottom: 200px;
-  left: -30px;
+  left: -100px;
 }
 
 .welcome__wrapper {
@@ -822,7 +829,7 @@ header {
     right: 10px;
   }
   .page__welcome .geometry.top {
-    top: 20px;
+    top: -20px;
     right: -40px;
   }
   .page__welcome .geometry.bottom {
@@ -1359,7 +1366,7 @@ header {
 }
 
 .allocation__title {
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 
 .allocation__title p {
@@ -1375,6 +1382,280 @@ header {
 
 .allocation__chart {
   position: relative;
+}
+
+.allocation__circe .circle__wrapper .allocation__card {
+  width: 252px;
+  height: 181px;
+  border: 1px solid var(--yellow);
+  border-radius: 10px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  padding: 25px 10px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+}
+
+.allocation__circe .circle__wrapper .allocation__card.pink {
+  border: 1px solid var(--pink);
+}
+
+.allocation__circe .circle__wrapper .allocation__card:hover {
+  background-color: #6c35d440;
+}
+
+.allocation__circe .circle__wrapper .card-title p {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.allocation__circe .circle__wrapper .card-title p.pink {
+  color: var(--pink);
+}
+
+.allocation__circe .circle__wrapper .card-title p.yellow {
+  color: var(--yellow);
+}
+
+.allocation__circe .circle__wrapper .card-subtitle p {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+}
+
+.allocation__circe .circle__wrapper .card-description p {
+  font-family: "SatoshiLight", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+}
+
+.allocation__circe .circle__wrapper .card-allocation p {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.94px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+}
+
+.allocation__circe .circle__wrapper .card-allocation span {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.allocation__circe .circle__wrapper .card-allocation span.pink {
+  color: var(--pink);
+}
+
+.allocation__circe .circle__wrapper .card-allocation span.yellow {
+  color: var(--yellow);
+}
+
+.allocation__circe .circle__wrapper .card-allocation a {
+  font-family: "SatoshiLight", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 19px;
+  letter-spacing: 0em;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding-bottom: 3.5px;
+  margin-left: 8px;
+}
+
+.allocation__circe .circle__chart {
+  padding-right: 100px !important;
+}
+
+.allocation__circe .circle__chart-ball {
+  margin: 0 auto;
+  width: 111px;
+  height: 111px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.allocation__circe .circle__chart-ball img {
+  width: 100%;
+}
+
+.allocation__circe .circle__chart-border {
+  position: relative;
+}
+
+.allocation__circe .circle__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.allocation__circe .ellipse {
+  position: absolute;
+  width: 205px;
+  height: 205px;
+  border-radius: 50%;
+  top: -51px;
+  left: -57px;
+}
+
+.allocation__circe .ellipse-lines {
+  position: relative;
+}
+
+.allocation__circe .ellipse-lines .chart-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+}
+
+.allocation__circe .ellipse-lines .chart-text .chart-percent {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-right: 5px;
+}
+
+.allocation__circe .ellipse-lines .chart-text:first-child {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+}
+
+.allocation__circe .ellipse-lines .chart-text1 {
+  left: -115px;
+  top: -30px;
+}
+
+.allocation__circe .ellipse-lines .chart-text1 .chart-percent {
+  color: var(--purple);
+}
+
+.allocation__circe .ellipse-lines .chart-text2 {
+  left: 45px;
+  top: -30px;
+}
+
+.allocation__circe .ellipse-lines .chart-text2 .chart-percent {
+  color: var(--pink);
+}
+
+.allocation__circe .ellipse-lines .chart-text3 {
+  left: 45px;
+  top: -30px;
+}
+
+.allocation__circe .ellipse-lines .chart-text3 .chart-percent {
+  color: var(--yellow);
+}
+
+.allocation__circe .ellipse-lines .line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 28.28px;
+  height: 1px;
+  background-color: #fff;
+}
+
+.allocation__circe .ellipse-lines .line1 {
+  top: -95px;
+  left: -28px;
+}
+
+.allocation__circe .ellipse-lines .line1:before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: #fff;
+  top: -7px;
+  left: -17px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.allocation__circe .ellipse-lines .line2 {
+  top: -170px;
+  left: 205px;
+}
+
+.allocation__circe .ellipse-lines .line2:before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: #fff;
+  top: 7px;
+  left: -17px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.allocation__circe .ellipse-lines .line3 {
+  top: -30px;
+  left: 202px;
+}
+
+.allocation__circe .ellipse-lines .line3:before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: #fff;
+  top: -7px;
+  left: -17px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.chart {
+  margin-bottom: 140px;
 }
 
 .chart__bar {
@@ -1438,7 +1719,7 @@ header {
   letter-spacing: 0em;
   text-align: center;
   margin-top: 15px;
-  color: #fff;
+  color: #bfb1e3;
 }
 
 .chart__bar .bar-part .bar-percent.yellow {
@@ -1459,4 +1740,651 @@ header {
   top: 0;
   border-radius: 20px;
   left: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .allocation__container {
+    padding-left: 20px;
+  }
+  .allocation__title p {
+    font-size: 18px;
+    line-height: 19px;
+  }
+  .chart__bar {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 1587px;
+    height: 17px;
+  }
+  .chart__bar .bar-part {
+    position: relative;
+    height: 17px;
+  }
+  .chart__bar .bar-part div.bar {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    height: 17px;
+  }
+  .chart__bar .bar-part .bar-text__wrapper {
+    position: absolute;
+    width: 82px;
+    height: 145px;
+    top: -8px;
+    left: 100%;
+  }
+  .chart__bar .bar-part .bar-text__wrapper .text:last-child {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .chart__bar .bar-part:last-child .bar-text__wrapper {
+    left: 33%;
+  }
+  .chart__bar .bar-part .line {
+    width: 1px;
+    height: 32px;
+    background-color: #fff;
+  }
+  .chart__bar .bar-part .bar-percent {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .chart__bar .bar-part .bar-percent.yellow {
+    color: var(--yellow);
+  }
+  .chart__bar .bar-part:nth-child(even) .text {
+    margin-top: -100% !important;
+  }
+  .chart__overlay {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(64, 22, 145, 0.03)), color-stop(0.01%, rgba(211, 247, 0, 0.0147)), color-stop(30.73%, rgba(64, 22, 145, 0.03)), color-stop(49.48%, rgba(211, 247, 0, 0.0147)), to(rgba(0, 0, 0, 0.03)));
+    background: linear-gradient(180deg, rgba(64, 22, 145, 0.03) 0%, rgba(211, 247, 0, 0.0147) 0.01%, rgba(64, 22, 145, 0.03) 30.73%, rgba(211, 247, 0, 0.0147) 49.48%, rgba(0, 0, 0, 0.03) 100%);
+    -webkit-box-shadow: inset 11px 13px 13px rgba(255, 255, 255, 0.05), inset -1px 1px 12px rgba(255, 255, 255, 0.25);
+            box-shadow: inset 11px 13px 13px rgba(255, 255, 255, 0.05), inset -1px 1px 12px rgba(255, 255, 255, 0.25);
+    -webkit-backdrop-filter: blur(80px);
+            backdrop-filter: blur(80px);
+    mix-blend-mode: normal;
+    max-width: 1587px;
+    height: 18px;
+    position: absolute;
+    top: 0;
+    border-radius: 20px;
+    left: 0;
+  }
+  .allocation__circe .circle__wrapper .allocation__card {
+    width: 143px;
+    height: 129px;
+    border: 1px solid var(--yellow);
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 10px 23px;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    cursor: pointer;
+  }
+  .allocation__circe .circle__wrapper .allocation__card.pink {
+    border: 1px solid var(--pink);
+  }
+  .allocation__circe .circle__wrapper .allocation__card:hover {
+    background-color: #6c35d440;
+  }
+  .allocation__circe .circle__wrapper .card-title p {
+    font-size: 10px;
+    line-height: 13.3px;
+  }
+  .allocation__circe .circle__wrapper .card-subtitle p {
+    font-size: 10px;
+    line-height: 13.3px;
+  }
+  .allocation__circe .circle__wrapper .card-description p {
+    font-size: 10px;
+    line-height: 13.3px;
+  }
+  .allocation__circe .circle__wrapper .card-allocation p {
+    font-size: 10px;
+    line-height: 13.3px;
+    margin-bottom: 20px;
+  }
+  .allocation__circe .circle__wrapper .card-allocation span {
+    font-size: 10px;
+    line-height: 13.3px;
+  }
+  .allocation__circe .circle__wrapper .card-allocation a {
+    font-size: 10px;
+    line-height: 13.3px;
+  }
+  .allocation__circe .circle__chart {
+    padding-right: 0px !important;
+    margin: 0;
+  }
+  .allocation__circe .circle__chart-ball {
+    margin: 0 auto;
+    width: 111px;
+    height: 111px;
+    border-radius: 50%;
+    position: relative;
+  }
+  .allocation__circe .circle__chart-ball > img {
+    display: none;
+  }
+  .allocation__circe .circle__chart-border {
+    position: relative;
+  }
+  .allocation__circe .circle__text {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 0;
+  }
+  .allocation__circe .ellipse {
+    position: absolute;
+    width: 94.71px;
+    height: 94.71px;
+    border-radius: 50%;
+    top: -51px;
+    left: -5px;
+  }
+  .allocation__circe .ellipse-lines {
+    position: relative;
+  }
+  .allocation__circe .ellipse-lines .chart-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: normal;
+    width: 67px;
+  }
+  .allocation__circe .ellipse-lines .chart-text .chart-percent {
+    font-size: 10px;
+    line-height: 13.3px;
+  }
+  .allocation__circe .ellipse-lines .chart-text:first-child {
+    font-size: 10px;
+    line-height: 13.3px;
+  }
+  .allocation__circe .ellipse-lines .chart-text1 {
+    left: -75px;
+    top: -24px;
+  }
+  .allocation__circe .ellipse-lines .chart-text1 .chart-percent {
+    color: var(--purple);
+  }
+  .allocation__circe .ellipse-lines .chart-text2 {
+    left: 29px;
+    top: -16px;
+  }
+  .allocation__circe .ellipse-lines .chart-text2 .chart-percent {
+    color: var(--pink);
+  }
+  .allocation__circe .ellipse-lines .chart-text3 {
+    left: 35px;
+    top: -18px;
+  }
+  .allocation__circe .ellipse-lines .chart-text3 .chart-percent {
+    color: var(--yellow);
+  }
+  .allocation__circe .ellipse-lines .line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 1px;
+    background-color: #fff;
+  }
+  .allocation__circe .ellipse-lines .line1 {
+    top: -45px;
+    left: -19px;
+  }
+  .allocation__circe .ellipse-lines .line1:before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 1px;
+    background-color: #fff;
+    top: -7px;
+    left: -17px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .allocation__circe .ellipse-lines .line2 {
+    top: -90px;
+    left: 99px;
+  }
+  .allocation__circe .ellipse-lines .line2:before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 1px;
+    background-color: #fff;
+    top: 7px;
+    left: -17px;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  .allocation__circe .ellipse-lines .line3 {
+    top: 3px;
+    left: 91px;
+  }
+  .allocation__circe .ellipse-lines .line3:before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 1px;
+    background-color: #fff;
+    top: -7px;
+    left: -17px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .circle__chart {
+    margin: 40px 0 60px 0;
+  }
+  .circle__text {
+    padding-top: 20px;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+}
+
+.page__roadmap {
+  width: 100%;
+  max-width: 1158px;
+}
+
+.roadmap__container {
+  padding-top: 100px;
+}
+
+.roadmap__container .roadmap__blocks-wrapper {
+  padding-top: 200px;
+}
+
+.roadmap__container .roadmap__points-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.roadmap__container .roadmap__points-wrapper.top {
+  top: -180px;
+  left: 0;
+}
+
+.roadmap__container .roadmap__points-wrapper.bottom {
+  bottom: -70px;
+  left: 0;
+}
+
+.roadmap__container .roadmap__points-wrapper.bottom .roadmap__block-point {
+  height: 313px;
+}
+
+.roadmap__container .roadmap__points-wrapper.bottom .point__circle {
+  top: unset;
+  bottom: 58.5px;
+}
+
+.roadmap__container .roadmap__block {
+  position: relative;
+  max-width: 1214px;
+  height: 621px;
+  border-radius: 40px;
+  border: 2px solid var(--pink);
+}
+
+.roadmap__container .roadmap__block.top {
+  margin-left: 40px;
+  border-left: none;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.roadmap__container .roadmap__block.bottom {
+  max-width: 1217px;
+  margin-right: 40px;
+  margin-top: -1.5px;
+  border-left: none;
+  border-bottom: none;
+  border-right: none;
+  border-top-right-radius: 0;
+  background: var(--main-color);
+  position: relative;
+  border-bottom-right-radius: 0;
+}
+
+.roadmap__container .roadmap__block.bottom:after {
+  content: "";
+  border-radius: 40px;
+  position: absolute;
+  top: -2px;
+  bottom: -3px;
+  left: -3px;
+  right: 3px;
+  background: linear-gradient(170.23deg, #bfb1e3 7%, rgba(191, 177, 227, 0) 101.09%);
+  z-index: -1;
+}
+
+.roadmap__container .roadmap__block.bottom .roadmap__points-wrapper {
+  max-width: 700px;
+  padding-left: 40px;
+}
+
+.roadmap__container .roadmap__block-point {
+  position: relative;
+  max-width: 207px;
+  width: 100%;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.roadmap__container .point__circle {
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 170.5px;
+  left: 40px;
+  z-index: 10;
+}
+
+.roadmap__container .point__circle:after {
+  content: "";
+  position: absolute;
+  width: 29px;
+  height: 29px;
+  border: 1px solid rgba(255, 255, 255, 0.47);
+  border-radius: 50%;
+  top: -5px;
+  left: -5px;
+}
+
+.roadmap__container .point__circle:before {
+  content: "";
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  border: 1px solid rgba(255, 255, 255, 0.47);
+  border-radius: 50%;
+  top: -12px;
+  left: -12px;
+}
+
+.roadmap__container .point__title {
+  z-index: 1;
+  margin-bottom: 15px;
+}
+
+.roadmap__container .point__title p {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  color: #828282;
+  letter-spacing: 0em;
+}
+
+.roadmap__container .point__title p.achieved {
+  color: var(--yellow);
+}
+
+.roadmap__container .point__subtitle {
+  z-index: 1;
+}
+
+.roadmap__container .point__subtitle p {
+  font-family: "SatoshiLight", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0em;
+  color: #fff;
+}
+
+.roadmap__container .point__data {
+  z-index: 1;
+}
+
+.roadmap__container .point__data p {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0em;
+  color: #828282;
+}
+
+.roadmap__container .point__data p.achieved {
+  color: var(--yellow);
+}
+
+.roadmap__title {
+  position: relative;
+  font-size: 58px;
+  color: #fff;
+  font-family: "Syncopate", sans-serif;
+  line-height: 66.63px;
+  margin-bottom: 45px;
+}
+
+.roadmap__title span {
+  font-size: 20px;
+  line-height: 31.92px;
+  position: absolute;
+  top: -45px;
+  right: 70px;
+  color: var(--yellow);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.roadmap__text p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  line-height: 23.94px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.roadmap__text p:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.roadmap__text-wrapper {
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .roadmap__container {
+    padding-top: 50px;
+  }
+  .roadmap__container .roadmap__blocks-wrapper {
+    padding-top: 80px;
+  }
+  .roadmap__container .roadmap__points-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .roadmap__container .roadmap__points-wrapper.top {
+    top: -92px;
+    left: 0;
+  }
+  .roadmap__container .roadmap__points-wrapper.top .point__circle {
+    top: 87.5px;
+  }
+  .roadmap__container .roadmap__points-wrapper.top .roadmap__block-point {
+    height: 125px;
+  }
+  .roadmap__container .roadmap__points-wrapper.bottom {
+    bottom: -31px;
+    left: 0;
+  }
+  .roadmap__container .roadmap__points-wrapper.bottom .roadmap__block-point {
+    height: 125px;
+  }
+  .roadmap__container .roadmap__points-wrapper.bottom .point__circle {
+    top: unset;
+    bottom: 25.5px;
+  }
+  .roadmap__container .roadmap__block {
+    position: relative;
+    max-width: 1214px;
+    height: 209px;
+    border-radius: 20px;
+    border: 2px solid var(--pink);
+  }
+  .roadmap__container .roadmap__block.top {
+    margin-left: 30px;
+    border-left: none;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .roadmap__container .roadmap__block.bottom {
+    margin-left: 10px;
+    max-width: 1217px;
+    margin-right: 20px;
+    margin-top: -1.5px;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+    border-top-right-radius: 0;
+    background: var(--main-color);
+    position: relative;
+    border-bottom-right-radius: 0;
+  }
+  .roadmap__container .roadmap__block.bottom:after {
+    content: "";
+    border-radius: 20px;
+    position: absolute;
+    top: -2px;
+    bottom: -3px;
+    left: -2px;
+    right: 3px;
+    background: linear-gradient(170.23deg, #bfb1e3 7%, rgba(191, 177, 227, 0) 101.09%);
+    z-index: -1;
+  }
+  .roadmap__container .roadmap__block.bottom .roadmap__points-wrapper {
+    max-width: 700px;
+    padding-left: 20px;
+  }
+  .roadmap__container .roadmap__block-point {
+    position: relative;
+    max-width: 77px !important;
+    height: 130px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .roadmap__container .point__circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 83.5px;
+    left: 12px;
+    z-index: 10;
+  }
+  .roadmap__container .point__circle:after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.47);
+    border-radius: 50%;
+    top: -5px;
+    left: -5px;
+  }
+  .roadmap__container .point__circle:before {
+    display: none;
+  }
+  .roadmap__container .point__title {
+    margin-bottom: 5px;
+  }
+  .roadmap__container .point__title p {
+    font-size: 10px;
+    line-height: 13.3px;
+  }
+  .roadmap__container .point__subtitle p {
+    font-size: 10px;
+    line-height: 13.3px;
+  }
+  .roadmap__container .point__data p {
+    font-size: 10px;
+    line-height: 13.3px;
+  }
+  .roadmap__title {
+    font-size: 18px;
+    line-height: 18.74px;
+    margin-bottom: 15px;
+  }
+  .roadmap__title span {
+    font-size: 10px;
+    line-height: 13.33px;
+    top: -20px;
+    right: 70px;
+  }
+  .roadmap__text p {
+    font-size: 14px;
+    line-height: 18.62px;
+  }
+  .roadmap__text-wrapper {
+    padding-left: 20px;
+    max-width: 218px !important;
+    width: 100%;
+  }
 }
