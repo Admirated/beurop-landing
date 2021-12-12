@@ -1,0 +1,33 @@
+.page__partners {
+  max-width: 1158px;
+  width: 100%;
+}
+
+.partners__container {
+  padding-top: 180px;
+}
+
+.partners__title p {
+  font-family: "Syncopate", sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 67px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+}
+
+.partners__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.partners__item {
+  width: 235px;
+  height: 50px;
+}
