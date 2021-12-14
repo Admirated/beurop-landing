@@ -3263,18 +3263,14 @@ header {
     top: 0;
     left: 0;
     width: var(--player-time);
-    height: 1px;
+    height: 6px;
     background: var(--yellow);
   }
   .audio .player__bar-circle {
-    position: absolute;
+    display: none;
     top: -0.5px;
-    left: 30%;
     width: 3.3px;
     height: 3.3px;
-    background-color: var(--yellow);
-    border-radius: 50%;
-    cursor: pointer;
   }
   .audio .volume {
     display: -webkit-box;

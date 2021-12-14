@@ -122,8 +122,7 @@ window.addEventListener('DOMContentLoaded', () => {
    function songAction(btn) {
       const src = btn.closest('.player').dataset.src;
       if (audio.src.split('/').pop() !== src) {
-         console.log('213123');
-         currentPlayer = btn.closest('.audio');
+         currentPlayer = btn.closest('.audio .player');
 
          currentProgressBar = currentPlayer.querySelector('.player__bar');
          currentVolumeBar = currentPlayer.querySelector('.volume__bar');
