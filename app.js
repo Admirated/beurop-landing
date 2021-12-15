@@ -64,9 +64,7 @@ window.addEventListener('DOMContentLoaded', () => {
       //    eventsTarget: '.card__slider'
       // },
       slidesPerView: 1.5,
-      autoplay: {
-         delay: 2500
-      },
+      autoplay: false,
       speed: 600,
       initialSlide: 1,
       centeredSlides: true,
@@ -79,13 +77,27 @@ window.addEventListener('DOMContentLoaded', () => {
       },
    });
    //video navigation
-   const videoTabs = document.querySelectorAll('.video__navigation-item');
-   videoTabs.forEach(tab => {
+   const videoNavTabs = document.querySelectorAll('.video__navigation-item'),
+      videoTabs = document.querySelectorAll('.swiper-wrapper[data-section]');
+
+   videoNavTabs.forEach(tab => {
       tab.addEventListener('click', () => changeTab(tab))
    })
 
    function changeTab(activeTab) {
       videoTabs.forEach(tab => {
+         if (tab.dataset.section === activeTab.dataset.section) {
+            const active = document.querySelector(`.swiper-wrapper[data-section="${tab.dataset.section}"]`);
+            active.classList.remove('hide');
+            active.classList.add('d-flex');
+         } else {
+            const disabled = document.querySelector(`.swiper-wrapper[data-section="${tab.dataset.section}"]`);
+            disabled.classList.remove('d-flex');
+            disabled.classList.add('hide');
+         }
+      })
+
+      videoNavTabs.forEach(tab => {
          tab.classList.remove('_active');
          activeTab.classList.add('_active');
       })
@@ -151,21 +163,27 @@ window.addEventListener('DOMContentLoaded', () => {
 
    }
 
+   function getHMS(time) {
+      let hours = Math.floor(time / 60 / 60);
+      let minutes = Math.floor(time / 60) - (hours * 60);
+      let seconds = Math.floor(time % 60);
+      hours = hours > 9 ? hours : '0' + hours;
+      minutes = minutes > 9 ? minutes : '0' + minutes;
+      seconds = seconds > 9 ? seconds : '0' + seconds;
+      const hms = `${hours}:${minutes}:${seconds}`;
+      return hms;
+   }
+
    function updateProgress(e) {
       const {
          duration,
          currentTime
       } = e.srcElement;
-      let hours = Math.floor(currentTime / 60 / 60);
-      let minutes = Math.floor(currentTime / 60) - (hours * 60);
-      let seconds = Math.floor(currentTime % 60);
-      hours = hours > 9 ? hours : '0' + hours;
-      minutes = minutes > 9 ? minutes : '0' + minutes;
-      seconds = seconds > 9 ? seconds : '0' + seconds;
+      const time = getHMS(currentTime);
 
       const progress = (currentTime / duration) * 100;
       currentProgressBar.style.setProperty('--player-time', `${progress}%`);
-      currentTimeStart.textContent = `${hours}:${minutes}:${seconds}`;
+      currentTimeStart.textContent = time;
    }
 
    function setProgress(e) {
@@ -177,6 +195,10 @@ window.addEventListener('DOMContentLoaded', () => {
    }
 
    audio.addEventListener('timeupdate', updateProgress);
+   audio.addEventListener('canplaythrough', () => {
+      const hms = getHMS(audio.duration);
+      currentPlayer.querySelector('.player__time.end p').textContent = hms;
+   })
 
    function setMuted(e) {
       if (audio.volume === 0) {

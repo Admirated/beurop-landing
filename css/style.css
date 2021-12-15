@@ -82,6 +82,19 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
+}
+
+body:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1001;
+  pointer-events: none;
+  background: radial-gradient(142.96% 142.96% at 50% 41.16%, rgba(200, 0, 120, 0.132) 0%, rgba(128, 0, 115, 0.096) 21.35%, rgba(169, 0, 0, 0.10075) 45.83%, rgba(0, 0, 0, 0) 100%);
 }
 
 .wrapper {
@@ -453,6 +466,7 @@ header {
           align-items: center;
   margin: 0 auto;
   padding-bottom: 100px;
+  position: relative;
 }
 
 .page__container .geometry-wrapper {
@@ -467,6 +481,38 @@ header {
   width: 100vw;
   padding-top: 84px;
   background: center url("../assets/img/12_transparent_background 2.png") no-repeat;
+}
+
+.page__welcome:after {
+  content: "";
+  position: absolute;
+  width: 1298px;
+  height: 864px;
+  left: -555.65px;
+  top: -798px;
+  pointer-events: none;
+  z-index: 1001;
+  background: radial-gradient(45.03% 45.03% at 61.62% 54.41%, rgba(211, 247, 0, 0.3) 0%, rgba(211, 247, 0, 0) 100%);
+  -webkit-filter: blur(442px);
+          filter: blur(442px);
+  -webkit-transform: rotate(22.77deg);
+          transform: rotate(22.77deg);
+}
+
+.page__welcome:before {
+  content: "";
+  width: 1298px;
+  height: 864px;
+  position: absolute;
+  z-index: 1001;
+  right: -555.65px;
+  pointer-events: none;
+  top: 40px;
+  background: radial-gradient(50% 50% at 40.89% 38.65%, rgba(211, 247, 0, 0.1225) 0%, rgba(232, 255, 97, 0.1225) 100%);
+  -webkit-filter: blur(442px);
+          filter: blur(442px);
+  -webkit-transform: rotate(-34.64deg);
+          transform: rotate(-34.64deg);
 }
 
 .page__welcome .geometry {
@@ -1116,7 +1162,21 @@ header {
 }
 
 .page__slider {
+  position: relative;
   padding-top: 100px;
+}
+
+.page__slider::after {
+  content: "";
+  position: absolute;
+  left: -20vh;
+  right: 0;
+  top: -20vh;
+  z-index: 13;
+  height: 100vh;
+  width: 100vw;
+  pointer-events: none;
+  background: url("../assets/img/11_transparent_background 1.png");
 }
 
 .swiper-slide-active .slider__card {
@@ -2856,6 +2916,19 @@ header {
 .page__video {
   max-width: 1158px;
   width: 100%;
+  position: relative;
+}
+
+.page__video::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -20vh;
+  z-index: 13;
+  height: 100vh;
+  pointer-events: none;
+  background: url("../assets/img/11_transparent_background 1.png");
 }
 
 .video__container {
@@ -2930,6 +3003,10 @@ header {
   max-height: 143px;
   height: 100%;
   width: 100%;
+}
+
+.video .swiper-wrapper {
+  max-height: 203px;
 }
 
 @media screen and (max-width: 767px) {
@@ -3014,7 +3091,7 @@ header {
   -ms-flex-direction: column;
   flex-direction: column;
   width: 550px;
-  height: 150px;
+  height: 120px;
   padding: 20px 30px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(64, 22, 145, 0.03)), color-stop(0.01%, rgba(211, 247, 0, 0.0147)), color-stop(30.73%, rgba(64, 22, 145, 0.03)), color-stop(49.48%, rgba(211, 247, 0, 0.0147)), to(rgba(0, 0, 0, 0.03)));
   background: linear-gradient(180deg, rgba(64, 22, 145, 0.03) 0%, rgba(211, 247, 0, 0.0147) 0.01%, rgba(64, 22, 145, 0.03) 30.73%, rgba(211, 247, 0, 0.0147) 49.48%, rgba(0, 0, 0, 0.03) 100%);
@@ -3200,7 +3277,7 @@ header {
     -ms-flex-direction: column;
     flex-direction: column;
     width: 290px;
-    height: 87px;
+    height: 68px;
     padding: 12px;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(64, 22, 145, 0.03)), color-stop(0.01%, rgba(211, 247, 0, 0.0147)), color-stop(30.73%, rgba(64, 22, 145, 0.03)), color-stop(49.48%, rgba(211, 247, 0, 0.0147)), to(rgba(0, 0, 0, 0.03)));
     background: linear-gradient(180deg, rgba(64, 22, 145, 0.03) 0%, rgba(211, 247, 0, 0.0147) 0.01%, rgba(64, 22, 145, 0.03) 30.73%, rgba(211, 247, 0, 0.0147) 49.48%, rgba(0, 0, 0, 0.03) 100%);
